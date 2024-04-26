@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>¿Cómo Crear Formularios en HTML?</title>
+</head>
+<body>
+    <h1>¿Cómo Crear Formularios en HTML?</h1>
+    <form action="" method="post">
+        <label for="suNombre">Nombre</label>
+        <input 
+        type="text"
+        id="suNombre"
+        size="50"
+        autocomplete="off"
+        autofocus
+        maxlength="10"
+        required
+        >
+        <br><br>
+        <label for="suApellido">Apellido</label>
+        <input 
+        type="text"
+        id="suApellido"
+        size="50"
+        autocomplete="off"
+        maxlength="10"
+        value="Cervantes"
+        readonly
+        >
+        <br><br>
+        <label for="suDireccion">Direccion</label>
+        <input 
+        type="text"
+        id="suDireccion"
+        size="50"
+        autocomplete="off"
+        placeholder="Ej.: Calle, numero de casa o apt. ciudad"
+        >
+        <br><br>
+        <label for="suEmail">Email</label>
+        <input 
+        type="email"
+        id="suEmail"
+        size="50"
+        autocomplete="off"
+        >
+        <br><br>
+        <label for="suContrasenia">Contraseña</label>
+        <input 
+        type="password"
+        id="suContrasenia"
+        size="50"
+        autocomplete="off"
+        >
+        <br><br>
+        <label for="suDireccionWeb">Dirección Web</label>
+        <input 
+        type="url"
+        id="suDireccionWeb"
+        size="50"
+        autocomplete="off"
+        >
+        <br><br>
+        <label for="suEdad">Edad</label>
+        <input 
+        type="number"
+        id="suEdad"
+        size="50"
+        autocomplete="off"
+        >
+        <br><br>
+        Edad <br>
+        <input type="radio" name="edad_usuario" value="menor18" checked>Menor de 18 <br>
+        <input type="radio" name="edad_usuario" value="adulto">Entre 18 7 60 años <br>
+        <input type="radio" name="edad_usuario" value="envejeciente"> Mayor de 60 años <br>
+
+        Pasatiempos <br>
+        <input type="checkbox" name="pasatiempo1" value="leer">Lectura <br>
+        <input type="checkbox" name="pasatiempo2" value="deportes">Haver deportes <br>
+        <input type="checkbox" name="pasatiempo3" value="musica"> Escuchar Musica <br>
+        <input type="checkbox" name="pasatiempo4" value="otros" checked> otros <br> <br>
+
+        cantidad <input type="number" name="cantidad" value="1" min="0" max="10"><br><br>
+        
+        define un rango: <input type="range" name="rangos" size="50"> <br><br>
+        
+        Ajuntar archivo: <input type="file" name="arcvhivo[]" multiple> <br><br>
+
+        pais <br>
+        <select name="pais[]" >
+            <option value="Guatemala">Guatemala</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Estados unidos">Estados Unidos</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Panama">Panama</option>
+
+        </select>
+        <br><br>
+        comentarios <br>
+        <textarea name="mansaje" cols="30" rows="10"></textarea><br><br>
+
+        <input type="submit" name="enviar dartos" value="Enviar Formulario">
+
+        <input type="resest" name="limpia campos" value="resetesar Formulario">
+
+        <button type="boton">Esto es un <b>boton</b> </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-clases</title>
+    <style>
+        /* Pseudoclases orientadas a enlaces */
+        a:link{
+            color: green;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            font-size: 18px;
+        }
+
+        a:active{
+            color: black;
+        }
+
+        /* Pseudo-clases orientadas a cualquier elemento */
+
+        button:hover{
+            color: red;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        button:active{
+            color: blue;
+        }
+
+        /* Pseudo-clases orientadas a formularios */
+        input:enabled{
+            background-color: lightgreen;
+        }
+
+        input:focus{
+            background-color: yellow;
+        }
+
+        input:disabled{
+            background-color: darkred;
+            cursor: not-allowed;
+        }
+
+        input:invalid{
+            border-color: red;
+        }
+
+        /*Pseudoclases según la posición o número de un elemento*/
+        #posicionElemento p:first-child{
+            color: darkred;
+        }
+
+        #posicionElemento p:nth-child(2){
+            color: darkorange;
+        }
+
+        #posicionElemento p:last-child{
+            color: darkblue;
+        }
+
+        ul li:nth-child(even){
+            color: green;
+        }
+
+        ul li:nth-child(odd){
+            color: blue;
+        }
+
+        /* Pseudoclaes del enésimo hijo :nth-child(an+b) */
+        ol li:nth-child(-n+5){
+            background-color: orangered;
+        }
+
+        /* Pseudo-clases :not */
+        #navegacion p:not(:nth-child(2)){
+            color: red;
+            font-size: 11px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudoclases en CSS</h1>
+    <h2>Pseudoclases orientadas a enlaces</h2>
+    <a href="#">Esto es un enlace</a>
+
+    <button>Pulsa Aqui</button>
+
+    <form action="">
+        <label for="suNombre">Nombre</label>
+        <input type="text" id="suNombre" size="50"><br><br>
+        <label for="suApellido">Apellido</label>
+        <input type="text" id="suApellido" size="50"><br><br>
+        <label for="suEmail">Email</label>
+        <input type="email" id="suEmail" size="50"><br><br>
+
+        Genero: <br>
+        <input type="radio" name="genero" id="hombre" value="masculino">
+        <label for="hombre">Masculino</label>
+
+        <input type="radio" name="genero" id="mujer" value="femenino">
+        <label for="mujer">Femenino</label>
+
+        Pasatiempo: <br>
+        <input type="checkbox" name="Pasatiempo1" id="hiking" value="excursionismo">
+        <label for="hiking">excursionismo</label>
+
+        <input type="checkbox" name="Pasatiempo2" id="swining" value="Natacion">
+        <label for="swining">Natación</label>
+        <h2>Pseudoclases basadas en la posición o número de elemento</h2>
+    </form>
+    <div id="posicionElemento">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quisquam. Aspernatur incidunt, ipsum eveniet saepe corrupti quis iste optio ea eos cumque quod, illum distinctio! Similique assumenda eos quas quos.</p>
+        <p>Quaerat eligendi temporibus, earum ad ut repellendus accusantium corrupti maxime nihil, cupiditate praesentium sapiente hic natus nemo odio nam dolore incidunt id reprehenderit iusto? Inventore iusto molestias hic at iure?</p>
+        <p>Quisquam corporis maxime molestias eius est totam consequatur nemo! Sit iure vitae ipsam ex error dolor, iusto accusantium. Possimus repellendus, aut illum a voluptatum itaque laboriosam. Deserunt dolorem rem aspernatur.</p>
+    </div>
+
+    <ul>
+        <li>Manzanas</li>
+        <li>Uvas</li>
+        <li>Peras</li>
+        <li>Fresas</li>
+        <li>Moras</li>
+    </ul>
+
+    <h2>Pseudo-claes :nth-child(an+b)</h2>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+        <li>Septimo</li>
+        <li>Octavo</li>
+        <li>Noveno</li>
+    </ol>
+
+    <div id="navegacion">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quam asperiores ab alias doloremque. Accusantium aspernatur autem maxime minus perferendis ab molestiae voluptas repellat, provident quaerat. Eveniet laboriosam iusto laborum?</p>
+        <p>Nihil deleniti ex iure expedita voluptate vel nobis, hic quas esse ut est debitis assumenda sunt? Consectetur deserunt, libero voluptas error, quisquam deleniti aliquam ad assumenda, alias dolorum vel suscipit.</p>
+        <p>Debitis commodi repellendus eius facilis nobis, maxime officia, fugit quia nihil hic possimus amet, quidem nulla? Necessitatibus magni aliquid rerum eos consequatur sapiente? Laudantium consectetur numquam expedita alias accusamus quasi?</p>
+    </div>
+
+
+</body>
+</html>

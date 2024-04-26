@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Opacidad y Transparencia</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        img{
+            width: 33%;
+            height: auto;
+        }
+
+        #imagen1{
+            opacity: 1;
+        }
+
+        #imagen2{
+            opacity: 0.45;
+        }
+
+        #imagen3{
+            opacity: 0.1;
+        }
+
+        #imagen1:hover{
+            opacity: 0.45;
+        }
+
+        #caja{
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 50px;
+            width: 600px;
+            /* opacity: 0.45; 
+            filter: alpha(opacity=45); */
+            background-color: rgba(255,164,0,0.45);
+        }
+    </style>
+</head>
+<body>
+    <img src="playa.jpg" alt="Imagen de una playa" id="imagen1">
+    <img src="playa.jpg" alt="Imagen de una playa" id="imagen2">
+    <img src="playa.jpg" alt="Imagen de una playa" id="imagen3">
+
+    <div id="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem, provident velit voluptas odit sunt, deleniti nihil recusandae ullam veritatis eum eligendi possimus tempore ducimus dignissimos soluta quia distinctio id.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Propiedad Box-Shadow</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        #sombras-simples{
+            background-color: #ff8c00;
+            width: 600px;
+            height: 150px;
+            padding: 12px;
+            border-radius: 30px;
+            box-shadow: -12px -10px 5px 5px #ccc;
+        }
+
+        #sombras-multiples{
+            border: 1px solid;
+            width: 600px;
+            height: 340px;
+            margin-top: 20px;
+            margin-left: 18px;
+            margin-bottom: 40px;
+            box-shadow: -8px 1px 10px #001011,
+                        5px -3px 15px #dfe20a,
+                        6px 5px 15px #2808da;
+        }
+
+        #sombra-interior{
+            background-color: #ffd700;
+            width: 600px;
+            height: 20px;
+            margin: 20px;
+            padding: 12px;
+            box-shadow: 9px 2px 20px 3px #5f9ea0 inset;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Cómo crear sombras en CSS?</h1>
+    <div id="sombras-simples"></div>
+    <div id="sombras-multiples"></div>
+    <div id="sombra-interior"></div>
+</body>
+</html>

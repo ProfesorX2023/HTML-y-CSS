@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Selectores Avanzados</title>
+    <style>
+        /* Selector múltiple */
+
+        *{
+            margin: 50;
+            padding:50;
+        }
+
+        /* Selector Múltiple */
+
+        h2, #intro{
+            font-size: 25px;
+        }
+        
+        /* Selector Descendiente */
+        div p{
+            background-color: blue;
+            color: white;
+        }
+
+        /* Selectores Adyacentes */
+
+        div + p{
+            font-size: 25px;
+        }
+
+        /* Selectores Hijos */
+        ol>li{
+            color: rgb(255,0,0);
+        }
+
+        /* Selector Hermano General */
+        div ~ p {
+            font-size: 25px;
+        }
+
+        /* Selectores de Atributos [atr] */
+        a[target]{
+            color: green;
+        }
+
+        /* Selectores de Atributo [atr="valor"] */
+        a[target="_self"]{
+            color: red;
+        }
+
+        /* Selector de atributos [atr^="valor"] */
+        p[class^="destacado"]{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esto es un encabezado de Nivel 1</h1>
+    <p id="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eveniet alias perferendis quisquam quidem temporibus quae aspernatur placeat, odit dolore itaque porro reprehenderit vero id commodi aliquam praesentium a corrupti!</p>
+
+    <a href="#">Leer más...</a>
+
+    <h2>Esto es un encabezado de Nivel 2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti assumenda ipsam praesentium ratione temporibus, fugiat beatae, cum, eaque exercitationem molestias aut consequuntur quasi possimus suscipit officia repellendus alias sunt debitis.</p>
+
+    <div>
+        <h2>Esto es un encabezado de Nivel 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quia harum mollitia nam, quae ratione hic adipisci fugiat corporis, consequatur facere, magni quasi sunt repudiandae ab. Voluptatem pariatur minima enim!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora quam, repudiandae quia dolore error accusamus tenetur rerum quisquam necessitatibus sunt dolorum beatae consectetur eligendi optio vitae alias pariatur sed.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laborum quod a error architecto animi corporis! Iste neque sit aperiam, quas, veritatis illum quidem blanditiis modi totam asperiores alias amet.</p>
+
+    <ol>
+        <li>Vegetales</li>
+        <li>Frutas</li>
+        <ul>
+            <li>Manzanas</li>
+            <li>Uvas</li>
+            <li>Fresas</li>
+        </ul>
+        <li>Verduras</li>
+    </ol>
+
+    <p class="destacado principal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nihil, dolor placeat esse quo dignissimos dicta quam provident ab perferendis iure doloribus voluptatibus, numquam quae rerum possimus aut! Quae, quidem!</p>
+    <p class="texto-destacado principal">Hic consequuntur ipsa veritatis, molestiae a quasi. Exercitationem nostrum labore eum in, id quaerat eligendi? Eum voluptates dolorem sunt laboriosam quasi quisquam placeat vitae pariatur magni, sit fugiat atque amet.</p>
+    <p class="texto destacado">Voluptas ipsam placeat quis, asperiores rem quod ipsum molestias rerum, dolores aliquam quasi sint consectetur eum non possimus a exercitationem itaque. Asperiores optio minima deserunt, temporibus modi quod suscipit esse?</p>
+    <br>
+    <a href="https://google.com" target="_blank">Google</a><br>
+    <a href="https://yahoo.com" target="_self">Yahoo!</a><br>
+    <a href="https://google.com" target="_self">ir a Google</a><br>
+    <a href="https://yahoo.com" target="_blank">ir a Yahoo!</a><br>
+    <ul>
+        <li>Curso de PHP</li>
+        <li>Curso de C++</li>
+        <li>Curso de JavaScript</li>
+        <li>Aprende HTML
+        </li>
+    </ul>
+    
+</body>
+</html>
